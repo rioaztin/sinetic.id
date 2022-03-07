@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: white;
+    min-width: 599px;
+    /* background: url(https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80) 0 0 no-repeat; */
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+a.aLink:hover{
+    text-decoration: underline;
+}
+
+#main{
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.wrap{
+    width: 599px;
+    margin: auto;
+}
+
+#header {
+    padding: 70px 0;
+}
+
+#header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    width: 280px;
+    margin: auto;
+}
+
+#header h1::before{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+#header h1::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+#contents{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    padding-bottom: 35px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+#contents h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 500;
+}
+
+#contents p{
+    margin-top: 30px;
+}
+
+#footer{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+#footer .social-links{
+    display: flex;
+    justify-content: center;
+}
+
+#footer .social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 40px;
+}
